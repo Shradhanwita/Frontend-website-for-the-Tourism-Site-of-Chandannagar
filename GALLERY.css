@@ -1,0 +1,35 @@
+fieldset {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(241, 196, 112);
+
+border:10px solid black;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;	
+border-radius:20px;	
+
+}
+a {
+font-weight: bold;
+text-decoration: none;
+font-family: cursive;
+font-size: 40px;
+
+}
+legend {
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+header {
+    background-image: url("New folder/gall1.jpg");
+    background-size: 100%;
+    font-size: 100px;
+font-weight: bold;
+padding: 125px;
+text-shadow:2px 3px black;
+text-align: center;
+}
+  

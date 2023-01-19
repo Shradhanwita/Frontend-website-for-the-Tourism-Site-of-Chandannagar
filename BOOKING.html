@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING</title>
+    <script type="text/javascript" >
+        function namee()
+        {
+        var pin=document.f1.pin.value;  
+        var no=document.f1.no.value;  
+        
+        if(no.length < 10){  
+                  alert("Phone number must contain 10 digits"); 
+                  return false;
+                }else if (pin.length < 6) {
+                  alert("Pin code must contain 6 digits");
+                  return false;
+                }  
+        } 
+        </script>
+        <style>
+            fieldset {
+            margin-left: 50px;
+            margin-right: 50px;
+            
+
+    border:10px solid black;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:20px;	
+    background-color: rgb(241, 196, 112);
+
+        }
+        a {
+font-weight: bold;
+text-decoration: none;
+font-family: cursive;
+font-size: 40px;
+
+}
+            h1 {
+                font-family: cursive;
+            font-size: 50px;
+            margin-left: 40px;
+            }
+            h2 {
+                font-family: cursive;
+            font-size: 40px;
+            margin-left: 45px;
+            }
+
+        h3 {
+            font-family: cursive;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+        p {
+            font-family: cursive;
+            font-size: 27px;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        legend {
+            font-family: cursive;
+        }
+        a {
+            font-family: cursive;
+            margin-left: 50px;
+        }
+        header {
+            background-image: url("New folder/book1.jpg");
+            background-size: 100%;
+            font-size: 100px;
+    font-weight: bold;
+    padding: 145px;
+    text-shadow:2px 3px black;
+    text-align: center;
+        }
+        </style>
+</head>
+<body>
+    
+<header> Book a Trip</header>
+<br><br><br><br><br><br>
+    <fieldset>
+    <h2>| Please fill up the following details</h2>
+    <h3>REQUIRED FIELD *</h3>
+    <form name="f1" method="GET"  action="/JavaScript/Index" onsubmit="return namee()">
+        <p>First name :*<input type="text" name="name" id="fn" style="font-size: 25px;" required ></p>
+        <p>Middle name : <input type="text" name="name2" id="mn" style="font-size: 25px;"></p>
+        <p>Last name :*<input type="text" name="name3" id="ln" style="font-size: 25px;"required></p>
+         
+            <p> GENDER :*</p>
+        <p>
+            Male <input type="radio" name="gender" id="male" style="font-size: 25px;"required>
+            <br>
+            Female <input type="radio" name="gender" id="female" required>
+            <br>
+            Other <input type="radio" name="gender" id="other" required>
+        </p>
+    
+    <p>Date of birth :*<input type="date" name="dob" id="dob" style="font-size: 25px;"></p>
+    <p>Email :* <input type="email" name="email" id="email" style="font-size: 25px;" required> </p>
+    <p>Mobile No :*<input type="number" name="no" style="font-size: 25px;" required></p>
+    <p>Address :* <textarea name="address" id="address" required cols="100" rows="7" style="font-size: 25px;"></textarea></p>
+    <p>Pincode :* <input type="number" name="pin" id="pincode" style="font-size: 25px;" required></p>
+    <p>City :*<input type="text" name="city" id="c" style="font-size: 25px;" required></p>
+    <p>District :*<input type="text" name="dist" id="d" style="font-size: 25px;" required></p>
+    <p>State :*<input type="text" name="state" id="s" style="font-size: 25px;" required></p>
+    <p>Country :*<input type="text" name="con" id="co" style="font-size: 25px;" required></p>
+    <p>Identity proof :* <select name="idproof" id="idp" style="font-size: 25px;" required>
+        <option value="" style="font-size: 25px;" >--Select the id proof--</option> 
+        <option value="Aadhar card" style="font-size: 25px;">Aadhar card</option>
+        <option value="PAN card" style="font-size: 25px;">PAN card</option>
+        <option value="Voter card" style="font-size: 25px;">Voter card</option>
+        <option value="Passport" style="font-size: 25px;">Passport</option>
+        <option value="Other" style="font-size: 25px;">Other</option>
+     </select></p>
+
+     <h3>| Click on "Upload id proof" to upload your id card</h3>
+     <p><input style="font-size: 25px;" type="button" value="Upload id proof" style="font-size: 25px;"></p>
+     <p>Mention your preferable dates for tour :* <input type="date" name="datee" id="datee" style="font-size: 25px;" required></p>
+     <p> <input style="font-size: 25px;" type="submit" value="Submit" style="font-size: 25px;"></p>
+    </form>
+     <h3>| For your fellow travellers please fill the same form</h3>
+     <h3>| Click on "New form" to fill</h3>
+     <a style="font-size: 35px;" target="_blank" href="New_form.html">New form</a>
+    </fieldset>
+    <br><br>
+<a style="margin-left: 50px;" href="MEGA PROJECT.html">| Back to home</a>
+</body>
+</html>

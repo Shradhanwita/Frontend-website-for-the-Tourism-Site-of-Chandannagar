@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script type="text/javascript" >
+        function text()
+        {
+        var message=document.f1.msg.value;  
+        
+        if (message.length > 200) {
+                  alert("Message must not exceed 200 char");
+                  return false;
+        }
+    }
+   </script>
+    <style>
+fieldset {
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgb(241, 196, 112);
+
+    border:10px solid black;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:20px;	
+
+        }
+
+        a {
+text-decoration: none;
+font-family: cursive;
+font-size: 40px;
+font-weight: bold;
+
+}
+        img {
+            margin-left: 600px;
+            margin-top: 30px;
+            border:10px solid black;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:60px;	
+        }
+
+        p {
+            margin-left: 500px;
+            margin-top: 30px;
+            font-size: 40px;
+            font-family: cursive;
+        }
+        h2 {
+            margin-left: 50px;
+            font-family: cursive;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        h1 {
+            margin-left: 140px;
+            font-family: cursive;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 50px;
+            font-family: cursive;
+            font-size: 30px;
+        }
+        form {
+            margin-left: 55px;
+            font-family: cursive;
+            font-size: 35px;
+            font-weight: bold;
+            
+        }
+
+        header {
+            background-image: url("New folder/contact.jpg");
+            background-size: 100%;
+            font-size: 100px;
+    font-weight: bold;
+    padding: 135px;
+    text-shadow:2px 3px black;
+    text-align: center;
+        }
+        h3 {
+            font-size: 30px;
+            font-family: cursive;
+            margin-left: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>Contact Us</header>
+<br><br><br><br><br><br>
+    <fieldset>
+    <h1>| Developer of "Visite de Chandannagar" |</h1>
+    <img src="New folder/me.jpg" alt="Shradhanwita Mukherjee" title="Shradhanwita Mukherjee" height="460px">
+<p style="font-weight: bold;" > Shradhanwita Mukherjee</p>
+</fieldset>
+<br><br><br><br>
+<fieldset>
+    <h2>| Connect with us</h2>
+    <ul>
+        <li><a style="font-size: 35px;" href="http://www.instagram.com/shrady_m__" target="_blank">Instagram</a></li>
+        <li>Mail us : shradhanwitamukherjee@gmail.com</li>
+        <li>Call us : 9875584082/9123348312</li>
+    </ul>
+
+    <h3>
+       | Name : <input type="text" name="name" id="name" style="font-size: 25px;" required>(Required)
+        <br><br>
+       | Email : <input type="email" name="mail" id="mail" style="font-size: 25px;" required>(Required)
+<br><br>
+        
+    </h3>
+    <form name="f1"  method="GET"  action="/JavaScript/Index"  onsubmit="return text()">
+ | Leave a message : <textarea name="msg" id="message" required cols="100" rows="7"  ></textarea>
+ <h3 style="margin-left: 10px;" >**(Your personal details are safe in our website)</h3>
+
+ <input style="font-size: 30px;" type="submit" value="Submit"> 
+</form>
+
+</fieldset>
+<br><br>
+<a style="margin-left: 50px;" href="MEGA PROJECT.html">| Back to home</a>
+</body>
+</html>
